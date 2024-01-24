@@ -58,3 +58,22 @@
     <div id="viewDiv"></div>
   </body>
 </html>
+
+## Create a Map ##
+<script>
+    require(["esri/config", "esri/Map", "esri/views/MapView"], function(esriConfig, Map, MapView) {
+
+      esriConfig.apiKey = "AAPKd03d2b0786ed4b72aa540fbc9cbaa258Qe0F34wevIz2pDoQAxSWMS7CWVypkKFS5BegW2yneQnQDEuJiLMpEmVh4pVD99Ko"; ## my API key ##
+
+      const map = new Map({
+        basemap: "arcgis/topographic" // basemap styles service
+      });
+
+    });
+  </script>
+
+</head>
+<body>
+  <div id="viewDiv"></div>
+</body>
+</html>
