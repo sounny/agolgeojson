@@ -32,10 +32,23 @@
         basemap: "arcgis/topographic" // basemap styles service
       });
 
+      const renderer = {
+        type: "simple",
+        field: "mag",
+        symbol: {
+          type: "simple-marker",
+          color: "orange",
+          outline: {
+            color: "white"
+          }
+        }
+      };
+
       const geojsonLayer = new GeoJSONLayer({
         //url: "MegaCities.geojson", 
         url: "https://sounny.github.io/agolgeojson/MegaCities.geojson",
-        copyright: "Sounny"
+        copyright: "Sounny",
+        renderer: renderer
       });
 
       console.log(geojsonLayer);
