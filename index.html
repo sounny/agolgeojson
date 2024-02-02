@@ -33,9 +33,12 @@
       });
 
       const geojsonLayer = new GeoJSONLayer({
-        url: "MegaCities.geojson", //https://sounny.github.io/agolgeojson/MegaCities.geojson
+        //url: "MegaCities.geojson", 
+        url: "https://sounny.github.io/agolgeojson/MegaCities.geojson",
         copyright: "Sounny"
       });
+
+      console.log(geojsonLayer);
 
       const view = new MapView({
         map: map,
@@ -44,6 +47,8 @@
         container: "viewDiv", // Div element
         layers: [geojsonLayer]
       });
+
+       console.log(view);
     });
   </script>
 </body>
