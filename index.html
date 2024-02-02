@@ -25,7 +25,7 @@
 
   <script src="https://js.arcgis.com/4.28/"></script>
   <script>
-    require(["esri/config", "esri/Map", "esri/views/MapView"], function (esriConfig, Map, MapView) {
+    require(["esri/config", "esri/Map", "esri/layers/GeoJSONLayer", "esri/views/MapView"], function (esriConfig, Map, GeoJSONLayer, MapView) {
       esriConfig.apiKey = "AAPK56419a6214b44ea4bcb814fec9ef171eVhAxzMstqNZOcF3t1U-exAFnYlWyzkQVYSOD8xzziKyHegsVdDZxaECBoXxisXR6"; // my API key
 
       const map = new Map({
